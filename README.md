@@ -1,3 +1,3 @@
 # angularjs-skeleton
 
-https://ug-code.github.io/angularjs-skeleton/app/#!/
+https://ug-code.github.io/angularjs-skeleton/app
