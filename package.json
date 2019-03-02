@@ -1,0 +1,26 @@
+{
+  "name": "angular-seed",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A starter project for AngularJS",
+  "repository": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.7.7",
+    "angular-route": "^1.7.7",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0"
+  },
+  "scripts": {
+    "postinstall": "npm run copyAngularjs && npm run copyBootstrap && npm run copyjQueryJS",
+    "update-deps": "npm update",
+    "delModules": "rmdir node_modules /s /q",
+    "postupdate-deps": "npm run copyAngularjs && npm run copyBootstrap && npm run copyjQueryJS",
+    "copyAngularjs": "cpx \"node_modules/{angular,angular-*}/*.min.js\" app/assets/js -C",
+    "copyBootstrap": "cpx \"node_modules/bootstrap/dist/js/bootstrap.min.js\" app/assets/js -C && cpx \"node_modules/bootstrap/dist/css/bootstrap.min.css\" app/assets/css -C",
+    "copyjQueryJS": "cpx \"node_modules/jquery/dist/jquery.min.js\" app/assets/js -C"
+  }
+}

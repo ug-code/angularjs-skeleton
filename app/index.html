@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" class="h-100" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="ug-code">
+    <title ng-bind="'AngularJs Skeleton &mdash; ' + title"></title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <style>
+        /* Custom page CSS  */
+        .page {
+            padding: 60px 15px 0;
+        }
+
+        .footer {
+            background-color: #f5f5f5;
+        }
+
+        .footer > .container {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column h-100">
+<app-header></app-header>
+<!-- Begin page content -->
+<div class="page">
+    <ng-view></ng-view>
+</div>
+<!-- End page content -->
+<app-footer></app-footer>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/angular/angular.min.js"></script>
+<script src="assets/js/angular-route/angular-route.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
+
